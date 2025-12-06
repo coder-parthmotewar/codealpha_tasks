@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player-container">
+  <h2>🎵 JavaScript Music Player</h2>
+
+  <img id="cover" src="cover1.jpg" class="cover">
+
+  <h3 id="title">Song Title</h3>
+  <p id="artist">Artist</p>
+
+  <audio id="audio"></audio>
+
+  <div class="controls">
+    <button onclick="prevSong()">⏮</button>
+    <button onclick="togglePlay()" id="playBtn">▶</button>
+    <button onclick="nextSong()">⏭</button>
+  </div>
+
+  <input type="range" id="progress" value="0" onchange="setProgress()">
+
+  <div class="bottom">
+    <span id="currentTime">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+
+  <label>Volume:</label>
+  <input type="range" id="volume" min="0" max="1" step="0.01" value="1" onchange="setVolume()">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

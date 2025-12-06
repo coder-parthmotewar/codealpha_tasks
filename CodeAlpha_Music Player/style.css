@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(135deg, #1e1e1e, #333);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.cover {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px black;
+}
+
+.controls button {
+  background: #444;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  background: #00d4ff;
+  transform: scale(1.1);
+}
+
+#progress, #volume {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
