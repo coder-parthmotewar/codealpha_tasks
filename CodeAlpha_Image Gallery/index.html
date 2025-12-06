@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1> Image Gallery </h1>
+
+<!-- Filter Buttons -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+
+<!-- Image Gallery -->
+<div class="gallery" id="gallery">
+
+    <!-- Existing Images -->
+    <img src="https://picsum.photos/id/1015/400/300" data-category="nature" />
+    <img src="https://picsum.photos/id/1025/400/300" data-category="animals" />
+    <img src="https://picsum.photos/id/1035/400/300" data-category="nature" />
+    <img src="https://picsum.photos/id/1045/400/300" data-category="animals" />
+    <img src="https://picsum.photos/id/1055/400/300" data-category="nature" />
+    <img src="https://picsum.photos/id/1065/400/300" data-category="animals" />
+
+    <!-- ⭐ Added New Images -->
+    <img src="https://picsum.photos/id/1074/400/300" data-category="nature" />
+    <img src="https://picsum.photos/id/1084/400/300" data-category="nature" />
+    <img src="https://picsum.photos/id/109/400/300" data-category="nature" />
+
+    <img src="https://picsum.photos/id/237/400/300" data-category="animals" />
+    <img src="https://picsum.photos/id/593/400/300" data-category="animals" />
+    <img src="https://picsum.photos/id/433/400/300" data-category="animals" />
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <span id="closeBtn">×</span>
+    <span class="btn" id="prev">❮</span>
+    <img id="lightboxImg" />
+    <span class="btn" id="next">❯</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
