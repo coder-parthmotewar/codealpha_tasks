@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Portfolio — Parth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-minimal">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Parth</a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <select id="themeSelect" aria-label="Select theme">
+          <option value="neon">Neon Tech</option>
+          <option value="minimal" selected>Minimal White</option>
+          <option value="dark">Dark Pro</option>
+        </select>
+        <button id="ctaBtn" class="btn">Hire Me</button>
+        <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section container">
+      <div class="hero-content">
+        <h1 class="reveal">Hi, I'm <span class="accent">Parth Motewar</span></h1>
+        <p class="reveal delay">I build modern, accessible web experiences. Frontend-focused developer, UI/UX enthusiast.</p>
+        <div class="hero-actions reveal delay-2">
+          <a href="#projects" class="btn">See Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image reveal delay-3">
+        <img src="https://picsum.photos/seed/portfolio/520/380" alt="Your portrait or artwork" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section container">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I’m a web developer specializing in building delightful interfaces and performant apps. I enjoy clean design, animations and accessible experiences.</p>
+          <ul>
+            <li>Location: Nanded, India</li>
+            <li>Role: Frontend Developer</li>
+            <li>Available for freelance & full-time</li>
+          </ul>
+        </div>
+        <div class="cards">
+          <div class="card">Fresher</div>
+          <div class="card">React / JS / HTML / CSS</div>
+          <div class="card">Design Systems & Accessibility</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section container">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill">
+          <h4>HTML & CSS</h4>
+          <div class="bar"><span style="width:95%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="bar"><span style="width:88%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Java</h4>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Oracle</h4>
+          <div class="bar"><span style="width:75%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <img src="https://picsum.photos/seed/p1/600/360" alt="Project 1" />
+          <div class="pc-body">
+            <h3>Project One</h3>
+            <p>Short description of the project — tech used and outcome.</p>
+            <div class="pc-actions">
+              <a href="#" class="link">View</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <img src="https://picsum.photos/seed/p2/600/360" alt="Project 2" />
+          <div class="pc-body">
+            <h3>Project Two</h3>
+            <p>A design-driven product with interactive UI components.</p>
+            <div class="pc-actions">
+              <a href="#" class="link">View</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2">
+          <img src="https://picsum.photos/seed/p3/600/360" alt="Project 3" />
+          <div class="pc-body">
+            <h3>Project Three</h3>
+            <p>Performance-focused single page application.</p>
+            <div class="pc-actions">
+              <a href="#" class="link">View</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="resume section container">
+      <h2>Resume</h2>
+      <p>Download a PDF version of my resume.</p>
+      <a href="#" class="btn">Download Resume</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <label>
+            <span>Name</span>
+            <input name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:you@domain.com">you@domain.com</a></p>
+          <p>LinkedIn: <a href="#">/yourprofile</a></p>
+          <p>GitHub: <a href="#">/yourhandle</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
